@@ -71,3 +71,83 @@ fungsi-fungsi yang terdapat di library csv
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Alfadian Owen}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Apa itu fungsi file csv? jelaskan sejarah dan contoh.
+
+CSV adalah tipe file khusus yang dapat Anda buat atau edit di Excel. File CSV menyimpan informasi yang dipisahkan oleh koma, bukan menyimpan informasi dalam kolom. Saat teks dan angka disimpan dalam file CSV, mudah untuk memindahkannya dari satu program ke program lain. 
+
+Format data CSV pertama kali digunakan pada tahun 1978, CSV baru muncul dan mulai digunakan pada tahun 1983 
+
+Contoh :
+\lstinputlisting[firstline=8, lastline=20]{src/4/1174091/teori/j1_1174091.py}
+
+\item Aplikasi apa saja yang bisa menciptakan file csv
+
+Numbers,Google Sheet,SiMBA dan Semua aplikasi teks editor seperti notepad++, vscode, sublime 
+
+\item Cara menulis dan membaca file csv di excel.
+\begin{figure}
+\begin{itemize}
+	\item pertama buat apa yang akan di isi
+	\item setelah itu pijit file->save as-> lalu ubah save as type menjadi csv
+
+\end{itemize}
+\end{figure}
+\item Jelaskan sejarah library csv
+
+Module csv mengimplementasikan kelas untuk membaca dan menulis data kedalam format CSV. Hal ini memungkinkan programmer untuk "tulis data ini dalam format yang disukai oleh Excel," atau "baca data dari file yang dihasilkan oleh Excel," tanpa mengetahui detail yang tepat dari format CSV yang digunakan oleh Excel. Pemrogram juga dapat menggambarkan format CSV yang dipahami oleh aplikasi lain atau menentukan format CSV tujuan khusus untuk mereka sendiri.
+
+\item Jelaskan sejarah library pandas
+
+Pandas merupakan toolkit yang powerfull sebagai alat analisis data dan struktur untuk bahasa pemrograman Python. Dengan menggunakan pandas kita dapat mengolah data dengan mudah, salah satu fiturnya adalah Dataframe.
+
+\item Jelaskan fungsi-fungsi yang terdapat di library csv
+\begin{itemize}
+	\item csv.reader
+	
+	membaca sbeuah file CSV yang telah dihasilkan aplikasi atau program lain. 
+	
+	\item csv.writer
+	
+	Berfungsi untuk menuliskan data dari variable kedalam file csv.
+	
+	\item csv.register\textunderscore dialect
+	
+	Mendaftarkan dialect pada csv
+	\item csv.unregister\textunderscore dialect
+	
+	Menghapus dialect yang telah didaftarkan
+	
+	\item csv.list\textunderscore dialects
+	
+	Mengembalikan dialect menjadi list
+	
+	\item csv.field\textunderscore size\textunderscore limit
+	
+	Mengembalikan ukuran field maksimum yang diizinkan oleh parser.
+	
+	\item csv.DictReader
+	
+	membaca csv file sebagai csv file
+	
+\end{itemize}
+
+\item Jelaskan fungsi-fungsi yang terdapat di library pandas
+\begin{itemize}
+	\item pandas.read\textunderscore csv
+	
+	Berfungsi untuk membaca dan mengembalikan data kedalam format DataFrame. 
+	
+	\item index\textunderscore col
+
+	Berfungsi untuk mengubah variable menjadi index
+	\item to\textunderscore csv
+	
+	Berfungsi untuk mengedit data dalam csv
+
+\end{itemize}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
