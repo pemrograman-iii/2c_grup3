@@ -1,0 +1,2 @@
+nama,tanggal
+shinmei,04-01-2000
