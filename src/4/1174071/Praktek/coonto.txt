@@ -1,0 +1,3 @@
+nama,kekuatan,isekainame,hobi
+Da Lopez,Aliran Pedang,Shinmei,Ngerap
+Captain Marvel,tesseracpower,Captainu Marvelu,Ngerapotin
