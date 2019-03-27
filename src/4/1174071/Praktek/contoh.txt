@@ -1,0 +1,3 @@
+nama,kelas,hobi
+Da Lopez,d4ti,ngerap
+Captain Marvel,d4ti2c,ngerapotin
