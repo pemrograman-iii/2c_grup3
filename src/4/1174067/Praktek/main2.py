@@ -2,7 +2,7 @@ pkg = __import__('1174067_pandas')
 
 loop=True 
 while loop: 
-    choice = input("Jawaban Soal No.[3-7]: ")
+    choice = input("Jawaban Soal No.[3-7, 9]: ")
   
     if choice=='3':
         print("\n")
@@ -23,6 +23,10 @@ while loop:
     elif choice=='7':
         print("\n")
         pkg.ChangeAttribute()
+        print("\n")
+    elif choice=='9':
+        print("\n")
+        pkg.WritePandas()
         print("\n")
     else:
         break
