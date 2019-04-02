@@ -53,3 +53,170 @@ fungsi perulangan dibutuhkan untuk penggunaan code membutuhkan penggunaan contoh
 
 \subsection{Soal 7}
 \lstinputlisting[firstline=1, lastline=9]{src/5/1174067/Teori/1174067.py}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ainul Filiani}
+\begin{enumerate}
+\item Apa itu fungsi device manager di windows dan folder /dev linux ?
+
+Device Manager pada komputer Windows atau linux, diambil dari Microsoft Management Console. Pengelola Perangkat Menampilkan semua perangkat keras yang dapat diinisialisasi (dikenali) oleh Windows atau linux. Penampilan telah diatur (dikelompokkan) sehingga akan memudahkan pengelolaan setiap perangkat keras yang ada.
+Pengelola Perangkat Windows atau linux
+Device Manager akan sangat membantu dalam mengelola (mengelola) semua perangkat keras yang diinstal (dan diinstal) dalam sistem Windows atau linux. Perangkat keras seperti hard drive, kartu VGA, suara, keyboard, perangkat USB dll. Akan sangat mudah untuk mengaksesnya dari dalam Device Manager.
+
+Beberapa fungsi kegunaan Manajer Perangkat meliputi:
+\begin{enumerate}
+\item Membahas status perangkat perangkat keras
+\item Diskusikan informasi terperinci tentang perangkat keras
+\item Kelola driver perangkat keras
+\item Nonaktifkan dan Aktifkan perangkat keras
+\item Mengatasi konflik perangkat keras, dll.
+\end{enumerate}
+
+\item Jelaskan Langkah-Langkah Instalasi Driver Dari Arduino ?
+
+\begin{enumerate}
+\item Menginstal Arduino IDE pada perangkat Windows: 
+
+Karena file IDE Arduino yang dipilih dalam unduhan sebelumnya adalah format file .zip, file ini tidak memerlukan instalasi untuk digunakan, dengan kata lain, ini adalah file IDE Arduino yang portabel.
+\item Pertama, silakan sambungkan Arduino ke PC Windows 10 atau laptop Anda menggunakan kabel USB
+\item Setelah itu, buka Device Manager. Caranya adalah dengan hanya menekan tombol Windows + Pause Break secara bersamaan, lalu pilih Device Manager di menu sebelah kiri
+\item Ketika Anda telah memasuki tampilan Device Manager, silakan pilih Ports (COM dan LPT). Setelah dipilih akan muncul drop down yang bertuliskan USB Serial Device (COM4)
+\item Klik kanan pada bagian USB Serial Device (COM4), lalu pilih Update Driver
+\item Setelah dua pilihan muncul, silakan pilih Browse my computer for software driver
+\item Langkah selanjutnya silakan cari di mana folder Anda menyimpan driver Arduino. Karena itu, pastikan Anda memiliki driver. Jika Anda tidak memilikinya, silakan unduh terlebih dahulu
+\item Setelah Anda memilih folder lokasi driver Arduino, silakan klik OK dan tunggu sampai proses instalasi driver selesai
+\item Jika proses instalasi selesai dan berhasil, maka penulisan USB Serial Device (COM4) di Device Manager akan berubah menjadi Arduino Uno (COM4) atau seri lain sesuai dengan Arduino yang Anda gunakan
+\item terakir Anda bisa langsung memasukkan program ke Arduino dari komputer
+
+\end{enumerate}
+\item Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver ? 
+
+Untuk membaca baudrate bisa dicek melalui arduino IDE, setelah itu  untuk mengecheck port dapat dilakukan dengan device manager
+
+
+\item Jelaskan sejarah library pyserial ? 
+
+Modul ini merangkum akses untuk port serial. Ini menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD (mungkin sistem yang mendukung POSIX), Jython dan IronPython (.NET dan Mono). Modul bernama "serial" secara otomatis memilih backend yang sesuai. Antarmuka berbasis kelas yang sama pada semua platform yang didukung.
+Akses ke pengaturan port melalui properti Python.
+Dukungan untuk berbagai ukuran byte, bit stop, paritas dan kontrol aliran dengan RTS / CTS dan / atau Xon / Xoff.
+Bekerja dengan atau tanpa menerima batas waktu.
+File seperti API dengan "read" dan "write" ("readline" dll. Juga didukung).
+File-file dalam paket ini adalah 100 persen Python murni.
+Port diatur untuk transmisi biner. Tidak ada stripping byte NULL, terjemahan CR-LF dll. (Yang berkali-kali diaktifkan untuk POSIX.) Ini membuat modul ini bermanfaat secara universal.
+Kompatibel dengan pustaka io (Python 2.6+)
+
+\item Jelaskan fungsi apa saja yang dipakai library pyserial ?
+\begin{enumerate}
+\item ‘A’	RELAY ON
+\item ‘Z’	RELAY OFF
+\item ‘1’	RELAY ON selama 100ms
+\item ‘2’	RELAY ON selama 250ms
+\item ‘3’	RELAY ON selama 500ms
+
+
+\end{enumerate}
+\item Jelaskan kenapa perlu pengulangan dalam tidak butuh perulangan dalam membaca serial ? 
+
+Perualangan dalam bahasa pemrograman berfungsi menyuruh komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
+Perulangan for disebut counted loop (perulangan yang terhitung), sementara perulangan while disebut uncounted loop (perulangan yang tak terhitung). Perbedaannya adalah perulangan for biasanya digunakan untuk mengulangi kode yang sudah diketahui banyak perulangannya. Sementara while untuk perulangan yang memiliki syarat dan tidak tentu berapa banyak perulangannya.
+Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu.  Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
+\item Jelaskan cara membuat fungsi yang menggunakan pyserial ? 
+
+Sebelum dapat menggunakan fungsi-fungsi PySerial dalam program, kita harus meng-import-nya terlebih dahulu dengan perintah:
+import serial
+Setelah itu  kita bisa mem-binding object SER2REL dengan port serial COM1 pada baudrate 2400.
+SER2REL = serial.Serial(“COM1”, 2400)
+Apabila  binding berhasil maka port serial COM1 akan di-open dan siap digunakan. Untuk mengetes apakah COM1 sudah open dan siap digunakan, kita gunakan fungsi isOpen sebagai berikut:
+SER2REL.isOpen()
+Fungsi ini menghasilkan nilai True jika COM1 sudah open dan nilai False jika sebaliknya. Pada eksperimen kita, SER2REL.isOpen() menghasilkan nilai True yang berarti kita sudah dapat mengirim dan menerima data ke dan dari port serial COM1.
+Untuk mengaktifkan RELAY-1, kita harus mengirimkan karakter ‘A’ ke modul SER-2REL. Perintah yang digunakan adalah:
+SER2REL.write(“AAA”)
+Pada perintah tersebut kita tidak mengirimkan 1 buah karakter ‘A’ melainkan 3 buah karakter ‘A’. Mengapa? Untuk safety saja. Siapa tahu ada kesalahan transmisi.  
+Modul SER-2REL menggunakan kristal 11.0592MHz untuk meyakinkan bahwa clock baudrate untuk port serial memiliki kesalahan nol persen.
+Perintah-perintah selanjutnya adalah perintah-perintah untuk:
+\begin{enumerate}
+\item mematikan RELAY-1
+\item mengaktifkan RELAY-2
+\item mematikan RELAY-2
+\item mengaktifkan kedua relay secara bersamaan
+\item dan mematikan kedua relay secara bersamaan.
+\end{enumerate}
+
+Berikut adalah skrip Python  yang disimpan dalam bentuk file program SER-2REL.py.
+
+\#\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\# Name:         SER-2REL.PY 
+
+\# Purpose:      Program Kontrol Pengujian Modul SER-2REL 
+
+\# Author:       Chandra MDE 
+
+\# Created:      17/04/2013 
+
+\# Copyright:    (c) Chandra MDE 2013 
+
+\#\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+
+-import serial, time 
+def main(): 
+
+    ser2rel = serial.Serial("COM1", 2400) 
+    
+    if not ser2rel.isOpen(): 
+    
+        ser2rel.open() 
+        
+    print "RELAY-1 ON" 
+    
+    ser2rel.write(‘AAA’)    \#RELAY-1 ON 
+    
+    time.sleep(1) 
+    
+    print "RELAY-1 OFF" 
+    
+    ser2rel.write(‘XXX’)    \#RELAY-1 OFF 
+    
+    time.sleep(1) 
+    
+    print "RELAY-2 ON" 
+    
+    ser2rel.write(‘BBB’)    \#RELAY-2 ON 
+    
+    time.sleep(1) 
+    
+    print "RELAY-2 OFF" 
+    
+    ser2rel.write(‘YYY’)    \#RELAY-2 OFF 
+    
+    time.sleep(1) 
+    
+    print "RELAY-1 dan RELAY-2 ON" 
+    
+    ser2rel.write(‘CCC’)    \#ALL ON 
+    
+    time.sleep(1) 
+    
+    print "RELAY-1 dan RELAY-2 OFF" 
+    
+    ser2rel.write(‘ZZZ’)    \#ALL OFF 
+    
+    time.sleep(1) 
+    
+    if ser2rel.isOpen(): 
+    
+        ser2rel.close() 
+        
+        if\_\_name\_\_== '\_\_main\_\_':
+        
+        main()
+
+
+
+
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
