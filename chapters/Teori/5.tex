@@ -296,3 +296,62 @@ dan mematikan kedua relay secara bersamaan.\\
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alvan Alvanzah/1174077}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+    \item Apa itu fungsi device manager di windows dan folder /dev di linux.
+    \begin{itemize}
+        \item Device  Manager berfungsi untuk membantuk dalam mengelola semua hardware yang terpasang dalam suatu sistem windows. Contohnya seperti harddisk, kartu VGA, sound, keyboard, perangkat USB dll. Akan mudah dikonfiguarsi dari dalam device manager.
+        \item Folder /dev berfungsi untuk menyimpan seluruh informasi yang tersimpan dalam linux berada pada sebuah struktur file.
+    \end{itemize}
+    
+    \item Jelaskan langkah-langkah instalasi driver dari arduino.
+    \begin{itemize}
+        \item Pertama hubungkan sistem minimum Arduino Uno ke komputer atau laptop dengan kabel USB type B.
+        \item Lalu pada begian kanan desktop PC anda, akan muncul pop up "Installing device driver software".
+        \item Sistem operasi windows tidak menyediakan driver untuk Arduiono Uno, lalu proses instalasinyan harus dilakukan secara manual.
+        \item Kemudian buka device manager, dengan caranya pada bagian search program and files lalu ketikkan ”device manager”. Pada control panel akan muncul device manager, klik untuk menjalankan.
+        \item Cari unknown device pada bagian other device, lihat tanda seru berwarna kuning, itu disebabkan karena penginstallan tidak berjalan dengan sempurna.
+        \item Klik kanan pada "unknown device" kemudian pilih Update Driver Software.
+        \item Pilih Browse my computer for driver software.
+        \item Arahkan lokasi folder ke file drver arduinonya. Pastikan check-box dicentang include subfolders. Klik next untuk melanjutkan instalasi driver.
+        \item Kemudian lanjutkan dengan mengklik install pada tampilan windows security.
+        \item Jika instalasi driver berhasil maka akan muncul windows has succesfully updated your driver software.
+        \item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
+    \end{itemize}
+    
+    \item Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver.
+    \begin{itemize}
+        \item Cara membaca baudratenya dengan mengecek pada IDE Arduino pada bagian tools lalu serial monitor
+        \item Untuk membaca portnya dengan mengecek pada device manager lalu lihat pada bagian portsnya
+    \end{itemize}
+    
+    \item Jelaskan sejarah library pyserial.
+    \par Modul ini merangkum akses untuk port serial. Ini menyediakan backends untuk Python yang berjalan pada Windows, OSX, Linux, BSD (mungkin sistem yang mendukung POSIX) dan IronPython. Modul bernama "serial" secara otomatis memilih backend yang sesuai.
+    
+    \item Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial.
+    \begin{itemize}
+        \item Serial – fungsi ini untuk membuka port serial.
+        \item Write(data) – untuk menulis data lewat port serial.
+        \item Readline() – untuk membaca string dari port serial.
+        \item Read(size) – untuk membaca jumlah byte dari port serial.
+        \item Close() – ini untuk menutup port serial.
+    \end{itemize}
+    
+    \item Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial.
+    \par Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu. Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
+    
+    \item Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial.
+    \begin{itemize}
+        \item Pertama import serial
+        \item Lalu definisikan nama fungsinya, setelah itu buatkan fungsinya
+        \item selajutnya panggil fungsi yang sudah dibuat dengan namafungsi()
+    \end{itemize}
+    
+\par Scan Plagarisme
+\begin{figure}[!h]	
+    \includegraphics[width=5cm]{figures/5/1174077/teori/plagarismechap5.png}
+    \centering
+\end{figure}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
