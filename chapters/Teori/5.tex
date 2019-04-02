@@ -484,3 +484,79 @@ PySerial merupakan paket Python yang memberikan akses atau memberikan memfasilit
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Handi Hermawan}
+\subsection{Soal Nomor 1}
+Apa itu fungsi device manager di windows dan folder /dev di linux?\\
+Jawab :
+\begin{itemize}
+\item Fungsi Device Manager di Sistem Operasi Windows yaitu
+\end{itemize}
+Beberapa fungsi kegunaan Device Manager yaitu menunjukkan status suatu hardware, menunjukkan informasi detil suatu hardware, mengelola driver hardware, disable  Enable hardware, meng-identifikasi konflik antar hardware dan Device Manager paling sering digunakan untuk pengelolaan driver suatu hardware. 
+\begin{itemize}
+\item Fungsi Folder /dev di Sistem Operasi Linux
+\end{itemize}
+Device manager pada linux berada pada folder /dev yang mempunyai arti device. folder ini berisi konfigurasi device pada sistem.
+
+\subsection{Soal Nomor 2}
+Jelaskan langkah-langkah instalasi driver dari arduino!\\
+Jawab :
+\begin{enumerate}
+\item Pertama, Download dan Extract Software Arduino IDE
+\item Hubungkan Port USB Arduino UNO ke Port USB PC.
+\item Maka PC akan mendeteksi keberadaan perangkat baru.
+\item Buka Device Manager dengan mengetik Device Manager di Search Program and Files
+\item Setelah Device Manager terbuka, silahkan cari “Unknown Device” yang berada di Other Device.
+\item Lalu klik kanan pada Unknown device, pilih Update Driver Software.
+\item Pilih Browse my computer for driver software, lalu cari Folder Instalan Software Arduino IDE
+\item lalu kilik Next, dan Windowspun akan mencari dan menginstal driver yang berada pada Folder tersebut.
+\item Setelah muncul peringatan, klik Install.
+\item Selesai, Arduino UNO sudah dikenali oleh PC.
+\end{enumerate}
+
+\subsection{Soal Nomor 3}
+Jelaskan bagaimana cara membaca baud rate dan port dari komputer yang sudah
+terinstall driver! \\
+Jawab :\\
+Cara membaca baudrate dan port kita hanya perlu menginstall Arduino IDE, setelah itu buka menu serial monitor yang berada di tab tools. Dari sana akan terlihat baudrate dan port yang sedang digunakan oleh arduino.
+
+\subsection{Soal Nomor 4}
+Jelaskan sejarah library pyserial!
+Jawab : \\
+Pyserial akses untuk port serial. Ini menyediakan backends untuk Python berjalan pada Windows, OSX, Linux, BSD (mungkin sistem yang mendukung POSIX) dan IronPython. Modul bernama "serial" secara otomatis memilih backend yang sesuai. PySerial pertama kali diluncurkan pada tahun 2002 yang makin berkembang dalam setiap versinya hingga tahun 2017 lalu.
+
+\subsection{Soal Nomor 5}
+Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial!\\
+Jawab :\\
+\begin{itemize}
+\item Serial fungsi ini untuk membuka port serial
+\item readline berguna untuk membaca sebuah string dari port serial.
+\item read(size) berguna untuk membaca jumlah byte dari port serial.
+\item close berguna untuk menutup port serial.
+\end{itemize}
+
+\subsection{Soal Nomor 6}
+Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial!\\
+Jawab :\\
+\begin{itemize}
+\item Perulangan
+\end{itemize}
+Dalam perulangan diperlukan untuk untuk mengulangi perintah agar lebih mudah dan tidak terjadi penumpukan kodingan. Perulangan dijalankan jika kondisi benar dan akan berhenti jika kondisi salah.
+
+\begin{itemize}
+\item Tidak butuh perulangan
+\end{itemize}
+Dan apabila perintah dijalankan sekali, kita tidak memerlukan perulangan.
+
+\subsection{Soal Nomor 7}
+Jelaskan bagaimana cara membuat fungsi yang menggunakan pyserial!\\
+Jawab :\\
+Cara membuat fungsi sama seperti pembuatan fungsi seperti biasa namun method dari pyserial dimasukkan kedalam fungsi dan dipanggil fungsi yang kita buat tadi seperti itulah.
+
+\par Scan Plagiarisme
+\begin{figure}[ht!]
+\includegraphics[width=5cm]{figures/5/1174080/plagiarismteori5.PNG}
+\centering
+\caption{plagiarisme}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
