@@ -220,3 +220,79 @@ def main():
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Sekar Jasmine}
+\begin{enumerate}
+
+\item 1. Apa itu fungsi device manager di windows dan folder.
+Device Manager adalah applet Panel Kontrol dalam sistem operasi Microsoft windows , ini  memungkinkan pengguna untuk melihat dan mengontrol perangkat keras yang terpasang pada komputer. ketika sepotong perangkat keras tidak berfyngsi. , perangkat keras yang menyinggung disorot bagi pengguna untuk berurusan dengan daftar perangkat keras dapat diurutkan berdasarkan berbagai kriteria.\\
+
+untuk setiap perangkat , pengguna dapat menyediakan driver perangkat sesuai dengan model driver windows , aktifkan atau nonaktifkan perangkat.\\
+
+\item 2. Jelaskan langkah-langkah instalasi driver dari arduino.
+1. pasang board Arduino anda ke port USB pada komputer atau laptop , kemudian tunggu hingga windows mencoba untuk menginstall driver sendiri.\\
+2. jika berhasil , berati instalasi selesai tapi jika gagal lanjutkan ke step berikutnya.
+3. Anda harus menginstall dari device manager untuk masuk ke device manager anda bisa melakukan dengan 2 cara .\\
+Cara 1 . A tekan tombol windows tambah R secara bersamaan. setelah itu tombol windows adalah tombol pada keyboard dengan logo windows. setelah anda menekan tombol windows plus R maka akan muncul Run ketikkan devmgmt.msc kemudian tekan tombol ENTER.
+cara 2 . B Klik start - pilih control panel . di dalam control panel pilih system dan security lalu pilih system , selanjutnya pilih Device Manager.\\
+
+\item 3. Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver.
+Pada komunikasi dengan kabel yang panjang , masalah kabel loss tidak akan menjadi masalah besar daripada menggunakan kabel level tegangan -3 vlot sampai -25 vlot dan 0.
+
+dalam komunikasi data serial dengan cara asinkron , kecepatan pengiriman data (baudrate) dan fase clock pada sisi transmiter dan pada sisi receiver harus sinkron. Untuk itu diperlukan sinkronisasi antara transmitter dan receiver.\\
+
+kecepatan baudrate dapat dipilih bebas dalam rentang nilai yang umum digunakan adalah 110 , 135 , 150 , 300 , 600 , 1200 , 2400 dan 9600 (bit/detik). dalam komunikasi data serial baudrate dari kedua alat yang berhubungan harus diatur pada kecepatan yang sama.\\
+
+\item 4. Jelaskan sejarah library pyserial.
+jadi library pyserial dibuat ke port tersebut ia meneruskan semua data ke port serial dan sebaliknya. Contohnya hanya mengekspor koneksi soket mentah , conthnya berikut dibawah ini memberikan client lebih banyak kontrol atas port serial jarak jauh.\\
+
+for( int hitungan = 0; hitungan <= 10; hitungan++ ){
+    // blok kode yang akan diulang
+}
+
+class Bintang{
+    public static void main(String[] args){
+
+        for(int i=0; i <= 5; i++){
+            System.out.println("*****");
+        }
+
+    }
+}
+Pengaturan serial diatur pada baris perintah saat memulai program. tidak ada kemungkinan untuk mengubah pengaturan dari jarak jauh semua data dilewatkan apa adanya.\\
+
+library/modul Python siap-pakai dan gratis yang dibuat untuk memudahkan kita dalam membuat program komunikasi data serial RS232 dalam bahasa Python.\\
+
+\item 5. Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial.
+A. Import serial untuk membinding object ser2rel dengan port serial com1 pada baudrate 2400.\\
+
+SER2REL untuk binding hasil maka port serial COM1 akan di-open dan siap digunakan untuk mengetes apakah COM1 sudah open dan siap digunakan fungsi isopen sebagai berikut :
+A. SER2REL.isOpen fungsi ini menghasilkan nilai true jika COM1 sudah open dan nilai false jika sebaliknya.\\
+Untuk mengaktifkan RELAY-1 , kita harus mengirimkan karakter 'A' ke modul SER-2REL.\\
+
+B. SER2REL.Write untuk menggunakan kristal 11.0592MHz untuk menyakinkan bahwa clock baudrate untuk port serial memiliki kesalahan nol persen.\\
+
+\item 6. Jelaskan kenapa butuh perulanggan dalam tidak butuh perulanggan dalam baca serial.
+Perulangan atau dalam istilah lain disebut dengan loop. Perulangan digunakan ketika kamu harus menyelesaikan sebuah task dengan jumlah yang besar dengan menggunakan pola yang sama.\\
+kalau tidak butuh perulangan maka tidak akan jalan/dibaca program yang anda bikin ,karena perulangan itu sangat butuh untuk mengetahui dimana letak for , while , do while . dll.\\
+
+\item 7. Jelaskan bagaimana cara membuat fungsi yang menggunakan pyserial.
+import serial untuk Selanjutnya kita dapat mem-binding object SER2REL dengan port serial COM1 pada baudrate 2400.\\
+
+SER2REL = serial.Serial(“COM1”, 2400)
+Jika binding berhasil maka port serial COM1 akan di-open dan siap digunakan. Untuk mengetes apakah COM1 sudah open dan siap digunakan, kita gunakan fungsi isOpen sebagai berikut:
+A. SER2REL.isOpen()
+Fungsi ini menghasilkan nilai True jika COM1 sudah open dan nilai False jika sebaliknya. Pada eksperimen kita, SER2REL.isOpen() menghasilkan nilai True yang berarti kita sudah dapat mengirim dan menerima data ke dan dari port serial COM1.\\
+
+B. SER2REL.write(“AAA”)
+SER-2REL menggunakan kristal 11.0592MHz untuk meyakinkan bahwa clock baudrate untuk port serial memiliki kesalahan nol persen.\\
+
+Perintah-perintah selanjutnya adalah perintah-perintah untuk:
+
+mematikan RELAY-1
+mengaktifkan RELAY-2
+mematikan RELAY-2
+mengaktifkan kedua relay secara bersamaan
+dan mematikan kedua relay secara bersamaan.\\
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
