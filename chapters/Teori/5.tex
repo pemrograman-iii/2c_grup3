@@ -427,3 +427,60 @@ Buat definisi seperti di python dengan menulus “def namafungsi() :”
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fernando Lorencius S/1174072}
+	\subsection{Soal 1} 
+		\begin{itemize}
+			\item Device Manager : Device Manager menampilkan seluruh hardware yang terinstall dalam komputer atau dikenali oleh Windows.
+
+			\item folder /dev : Dalam sistem operasi Linux, device atau perangkat yang tehubung akan dianggap file.dalam folder /dev terdapat file - file  tersebut berada.
+		\end{itemize}
+
+	\subsection{Soal 2}
+	Langkah - langkah instalasi driver arduino :
+		\begin{enumerate}
+			\item sambungkan board Arduino yang dimiliki  ke port USB pada komputer atau laptop, setelah melakukan hal tersebut tunggu hingga Windows mencoba untuk menginstall driver sendiri
+			\item setelah melakukan step pertama kita harus memiliki dahulu sofware Arduino, file driver arduino terlebih dahulu dan masukkan ke dalam directory yang terdapat pada komputer diusahakan directory di simpan di file yang mudah di cari
+		
+			
+			\item lalu windows akan memberitahukan notifikasi pop up yang menginformasikan bahwa ingin menginstall dirver, namun nanti biasanya tidak akan menemukan drivernya
+			
+			\item buka Device Manager ,Klik Start – pilih Control Panel. Di dalam Control Panel, pilih System and Security, lalu pilih System. Selanjutnya pilih Device Manager. 
+			\item cari unknown device yang terdapat dalam Device Manager.
+			
+			\item lakukan klik kanan kepada unknown device tersebut ,setelah itu pilih update driver software
+		
+			
+			\item pilih browse my computer for driver software sesuai dengan directory dalam bagian pertama dalam proses instalisasi
+			
+			
+			\item setelah melakukan proses tersebut, klik install dan tunggu hingga proses selesai
+			
+			
+			\item arduino pun sudah bisa di gunakan dalam komputer / laptop  anda 
+			
+		\end{enumerate}
+
+	\subsection{Soal 3}
+	Untuk mengetahui atau membaca baudrate dan port kita diwajibkan menginstall Arduino IDE, setelah melakukan instalasi atau memiliki Arduino IDE  buka menu serial monitor yang terdapat di dalam tab tools. Dari hasil proses tersebut kita dapat melihat baudrate dan port yang sedang terhubung oleh arduin anda.
+
+	\subsection{Soal 4}
+PySerial merupakan paket Python yang memberikan akses atau memberikan memfasilitasi komunikasi serial antara Komputer / laptop dengan perangkat keras eksternal. PySerial menyediakan antarmuka untuk berkomunikasi melalui protokol komunikasi serial. Komunikasi serial merupakan protokol komunikasi komputer tertua. PySerial pertama kali diluncurkan pada tahun 2002 dan makin berkembang dalam setiap versinya hingga tahun 2017 lalu.
+
+	\subsection{Soal 5}
+		\begin{itemize}
+			\item \begin{verbatim} readline()\end{verbatim} : fungsi serial digunakan untuk menerjemahkan sebuah string dari port serial
+			\item \begin{verbatim}Serial(sequence)\end{verbatim} :fungsi serial digunakan untuk membuka port serial.
+			\item \begin{verbatim}close()\end{verbatim} : fungsi tersebut digunakan untuk menutup port  dan menghentikan pembacaan program
+			\item \begin{verbatim}Write()\end{verbatim} : fungsi write menulis data lewat port serial 
+			\item \begin{verbatim}read(size)\end{verbatim}	: fungsi read(size) digunakan membaca seluruh jumlah byte dari port serial.
+		\end{itemize}
+
+	\subsection{Soal 6}
+	Dalam proses membaca serial di Arduino diperlukan perulangan supaya program dapat membaca data secara berulang kali sehingga data yang muncul banyak.Namun apabila tidak dibutuhkan perulangan maka Arduino akan membaca data cukup sekali saja.
+
+	\subsection{Soal 7}
+	Untuk membangun fungsi yang menggunakan pyserial hal yang pertama digunakan kita hanya perlu untuk menginisialisasi pembuatan funsi dengan mengunakan perintah fungsi def namafungsi() : lalu masukan indentasi. atau menggunakan fungsi while loop degan menggunakan  fungsi while true:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
