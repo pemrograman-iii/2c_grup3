@@ -355,3 +355,75 @@ dan mematikan kedua relay secara bersamaan.\\
 \end{figure}
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alfadian Owen}
+\subsection{Soal 1}
+ fungsi device manager di windows dan folder dev di linux.
+
+Device manager digunakan untuk menampilkan seluruh hardware yang bisa di inisialisasi (dikenali) oleh windows.
+
+dev merupakan direktori yang fungsinya untuk menyimpan konfigurasi device atau hardware dari sistem
+
+\subsection{Soal 2}
+langkah-langkah instalasi driver dari arduino
+
+\begin{itemize}
+	\item Hubungkan port usb Arduino ke port usb pc
+	\item Setelah terhubung, di bagian kanan bawah pc anda akan ada notifikasi "installing device driver"
+	\item setelah itu akan ada notifikasi gagal menginstall, jangan panik karena memang seperti itu
+	\item Buka Device Manager
+	\item Di dalam Device Manager cari "unknown device" yang ada di dalam "other device"
+	\item Klik kanan lalu update driver software
+	\item pilih browse my computer software
+	\item cari folder instalan software Arduino yang telah di download
+	\item klik next
+	\item klik install
+	\item selesai
+\end{itemize}
+
+\subsection{Soal 3}
+cara membaca baudrate dan port
+
+baudrate dan port akan langsung terbaca saat Arduino terpasang ke komputer
+
+\subsection{Soal 4}
+sejarah pyserial
+
+Pyserial adalah modul Python API untuk mengakses serial port, Pyserial menyediakan API yang seragam di berbagai sistem operasi termasuk windows,linux,dan BSD
+
+\subsection{Soal 5}
+Fungsi yang dipakai dari pyserial
+
+\begin{itemize}
+	\item Close()
+
+	untuk menutup port
+
+	\item Write()
+
+	untuk menulis string
+
+	\item Read(byte)
+
+	untuk membaca per byte
+
+	\item Readline()
+
+	untuk membaca sampai line terakhir
+
+	\item Serial()
+
+	untuk membuka port
+
+\end{itemize}
+\subsection{Soal 6}
+Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial
+
+Perulangan digunakan untuk membaca data tidak hanya satu kali, dengan adanya perulangan kita dapat membaca data berulang kali. Sehingga data yang dibaca dapat muncul berulang kali.
+
+\subsection{Soal 7}
+cara membuat fungsi pyserial
+
+Buat definisi seperti di python dengan menulus “def namafungsi() :”
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
