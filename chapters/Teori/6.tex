@@ -466,3 +466,106 @@ Untuk parameter color yang bisa digunakan terdiri beberapa tipe warna untuk cont
 	\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Alfadian Owen}
+\begin{enumerate}
+\item Apa itu fungsi library matplotlip 
+
+Matplotlib adalah library plot python 2D yang menghasilkan kualitas publikasi dalam berbagai format hardcopy. matplotlib dapat digunakan dalam skrip python
+
+\item jelaskan langkah-langkah membuat sumbu X dan Y di matplotlip
+
+\lstinputlisting[firstline=9, lastline=15]{src/6/1174091/teori/1174091.py}
+
+\item jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis (bar, histogram, dll). jenis plot di matplotlip ?  
+
+perbedaannya adalah cara pemakaian dan bentuknya.
+cara pakai :
+\begin{itemize}
+    \item plot
+    \lstinputlisting[firstline=9, lastline=15]{src/6/1174091/teori/1174091.py}
+    \item bar
+    \lstinputlisting[firstline=17, lastline=26]{src/6/1174091/teori/1174091.py}
+    \item histogram
+    \lstinputlisting[firstline=28, lastline=35]{src/6/1174091/teori/1174091.py}
+    \item scatter
+    \lstinputlisting[firstline=37, lastline=50]{src/6/1174091/teori/1174091.py}
+    \item area plot
+    \lstinputlisting[firstline=52, lastline=71]{src/6/1174091/teori/1174091.py}
+    \item pie
+     \lstinputlisting[firstline=73, lastline=93]{src/6/1174091/teori/1174091.py}
+\end{itemize} 
+
+\item Jelaskan bagaimana cara menggunakan legend dan lebel serta kaitannya dengan fungsi tersebut 
+
+cara menggunakaan nya adalah seperti berikut :
+\lstinputlisting[firstline=22, lastline=22]{src/6/1174091/teori/1174091.py}
+fungsi legend adalah menampilkan label yang ada pada plot
+\lstinputlisting[firstline=18, lastline=22]{src/6/1174091/teori/1174091.py}
+dengan begitu legend akan menampilkan label yang ada di plot
+kaitannya adalah label digunakan untuk menampilkan label plot
+
+\item Jelaskan apa fungsi dari subplot di matplotlib dan agaimana cara kerja dari fungsi subplot, sertakan ilustraasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot didalamnya!
+
+fungsi subplot di matplotlib adalah untuk menampilkan plot lebih dari satu pada program yang sama.
+contoh :
+\lstinputlisting[firstline=8, lastline=67]{src/6/1174091/teori/subplot.py}
+
+\item sebutkan semua parameter color yang bisa digunakan contoh: m,c,r,k,... dkk
+
+Parameter color dibagi menjadi 2 tipe yaitu :
+
+Tipe Warna RGB
+
+Untuk keterangannya sebagai berikut
+\begin{enumerate}
+\item R untuk warna Red atau Merah
+\item G untuk warna Green atau Hijau
+\item B untuk warna Blue atau Biru
+\end{enumerate}
+Tipe warna CMYK
+
+Untuk keterangannya sebagai berikut
+\begin{enumerate}
+\item    C untuk warna Cyan atau Biru Muda
+\item    M untuk warna Mangenta atau Merah Tua
+\item    Y untuk warna Yellow Atau Kuning
+ \item   K untuk warna blacK atau Hitam
+\end{enumerate}
+
+\item Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri?
+
+Jika menggunakan Histogram, kita tidak boleh memiliki variabel yang sama, diagram ini digunakan untuk mendata usia dari rentang tertentu atau kebutuhan lainnya.
+\lstinputlisting[firstline=28, lastline=35]{src/6/1174091/teori/1174091.py}
+
+\item jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors,startangle, shadow, explode, autopct.
+
+\begin{itemize}
+    \item label
+
+    Label digunakan untuk memberi nama pada diagram pie
+
+    \item color
+
+    color digunakan untuk memberi warna, agar dapat membedakan data yang ada
+
+    \item startangle
+
+    Digunakan untuk sudut yang digunakan untuk memulai diagram pie tersebut
+
+    \item shadow
+
+    bayangan digunakan untuk membuat bayangan dari setiap diagram pie 
+
+    \item explode
+
+    explode digunakan untuk mengeluarkan suatu data 
+
+    \item autopct
+
+    Digunakan sesuai dengan berapa angka dibelakang koma 
+
+\end{itemize} 
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
