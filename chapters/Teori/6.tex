@@ -366,3 +366,103 @@ Untuk fungsi histogram ini kedua titik koordinat boleh tidak sama. Misalnya x ny
 \end{itemize}
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fernando L Sihite /1174072}
+	\subsection{Soal 1} 
+		\begin{itemize}
+			\item Apa itu fungsi library matplotlib 
+
+			\item Matplotlib merupakan bagian dari library pada python yang biasanya digunakan untuk membuat diagram. Library ini menghasilkan ploting 2D.
+		\end{itemize}
+
+	\subsection{Soal 2}
+	\begin{itemize}
+	\item Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib 
+	
+	\item untuk membuat sumbu x dan y kita bisa membuatnya menggunakan list untuk mempermudah proses penyimpanan nilai setiap sumbunya.untuk menggambar sebuah plot garis menggunakan matplotlib. untuk membuat garis pada matplotlib, kita akan menggunakan matplotlib.
+Untuk contoh pembuatannya bisa dilihat sebagai berikut 
+
+	
+	\begin{verbatim}
+	import matplotlib.pyplot as plt	
+	x = (5,6,12,14,19)
+	y = (50, 60, 90, 70, 50)
+	
+	plt.plot([4,8,13,17,20],[54, 67, 98, 78, 45])
+	plt.show()
+    \end{verbatim}
+    
+	\end{itemize}
+	\subsection{Soal 3}
+	
+\begin{itemize}
+\item Sebuah plot sebaran/titik merupakan sebuah grafik yang menunjukkan hubungan antara dua set data.
+\lstinputlisting[firstline=19, lastline=23]{src/6/1174072/Teori/1174072.py}
+
+
+\item Sebuah Histogram merupakan salah satu grafik distribusi yang paling banyak digunakan dalam statistika.Di dalam matplotlib, kalian dapat mengakses histogram secara mudah dengan cukup memanggil
+fungsi hist Angka yang dikelompokkan dalam bentuk rentang tertentu disebut bins.
+\lstinputlisting[firstline=26, lastline=30]{src/6/1174072/Teori/1174072.py}
+
+
+
+
+
+\item Menggambar sebuah plot garis menggunakan matplotlib. hasil yang di eksekusi akan berbeda beda bari fungsi yang garis karena plot garis memberikan efek garis pada hasil gambaran yang di buat. kasus ini, kita akan menggunakan matplotlib.pyplot, yang menyediakan sebuah framework plotting. Dengan kata lain, itu menyediakan sebuah koleksi function bergaya command yang membuat matplotlib berkerja .
+\lstinputlisting[firstline=11, lastline=16]{src/6/1174072/Teori/1174072.py}
+
+
+
+
+\item pie chart adalah diagram yang digunakan untuk membandingkan antar bagian terhadap total. pie chart dalam bentuk persentase karena nilainya merupakan bagian-bagian yang dijumlah menjadi satu. sehingga bisa lihat kontribusi paling besar atau paling kecil dalam membentuk nilai. Pie chart biasanya digunakan untuk perbandingan yang sedikit. pie chart digunakan untuk membandingkan antar bagian terhadap total dan biasanya akan terdapat juga hasil presentasenya.
+\lstinputlisting[firstline=33, lastline=54]{src/6/1174072/Teori/1174072.py}
+
+
+\item Bagan area benar-benar mirip dengan bagan garis, kecuali area antara sumbu x dan garis diisi dengan warna atau bayangan. mewakili evolusi variabel numerik mengikuti variabel numerik lainnya. misalkan anda ingin mewakili evolusi ini untuk beberapa grup dalam waktu yang bersamaan, Anda mungkin tertarik dengan bagan area bertumpuk, di mana setiap grup ditampilkan satu sama lain dan bentuk hasil yang berdeda beda.
+\lstinputlisting[firstline=58, lastline=77]{src/6/1174072/Teori/1174072.py}
+
+\end{itemize}
+	\subsection{Soal 4}
+Untuk menambahkan fungsi legend pada grafik, caranya cukup sederhana yakni dengan menggunakan fungsi legend(). Penjelasan untuk fungsi legend() antara lain dapat berupa label dari tiap grafik, tetapi lokasi dimana legend akan diletakkan. Pada contoh berikut akan ditambahkan legend paga grafik yang telah dibuat pada contoh catatan sebelumnya.
+\lstinputlisting[firstline=76, lastline=76]{src/6/1174072/Teori/1174072.py}
+
+
+
+Untuk menambah label pada garis sumbu pada grafik dapat menggunakan syntax fungsi xlabel dan fungsi label pada MATLAB. Kedua label ditulis setelah syntax deklarasi plot.
+\lstinputlisting[firstline=46, lastline=46]{src/6/1174072/Teori/1174072.py}
+
+	\subsection{Soal 5}
+	Ketika fungsi plot dieksekusi atau di jalankan, otomatis grafik akan menampilkan dalam figure yang sedang aktif. 
+\lstinputlisting[firstline=81, lastline=81]{src/6/1174072/Teori/1174072.py}
+
+	\subsection{Soal 6}
+Untuk parameter color yang bisa digunakan terdiri beberapa tipe warna untuk contoh ada di bawah.
+\begin{enumerate}
+ 	\item Tipe warna CMYK
+    Untuk keterangannya sebagai berikut
+    ,C untuk warna Cyan atau Biru Muda
+    ,M untuk warna Mangenta atau Merah Tua
+    ,Y untuk warna Yellow Atau Kuning
+    ,K untuk warna blacK atau Hitam
+
+    \item Tipe Warna RGB
+    Untuk keterangannya sebagai berikut
+    ,R untuk warna Red atau Merah
+    ,G untuk warna Green atau Hijau
+    ,B untuk warna Blue atau Biru.
+   
+\end{enumerate}
+
+	\subsection{Soal 7}
+	pada fungsi histogram titik koordinat tidak boleh sama karena dalam diagram ini digunakan untuk 		    mendata selisih dari hasil rentang nilai tertentu.
+
+	\subsection{Soal 8}
+	\begin{itemize}
+	\item labels diperlukan untuk memberikan penjelasan dari bagian pie chart yang telah di buat.
+	\item colors diperlukan untuk mewarnai pie chart diagram yang telah dibuat, membuat warna yang 		   berbeda pada setiap bagian
+	\item startangle diperlukan untuk membuat diagram/chart mem-flip atau berbalik arah.
+	\item explode diperlukan untuk menonjolkan salah satu bagian dari pie chart.
+	\item shadows diperlukan untuk memberi bayangan pada pie chart yang telah di buat.
+	\item autopct diperlukan untuk memberi persen dari bagian-bagian pie chart yang telah buat.
+	\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
