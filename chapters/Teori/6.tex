@@ -263,3 +263,106 @@ Untuk fungsi histogram ini kedua titik koordinat boleh tidak sama. Misalnya x ny
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alvan Alvanzah/1174077}
+\subsection{Pemahaman Teori}
+
+\begin{enumerate}
+    \item Apa itu fungsi library matplotlib
+    \par Matplotlib berfungsi untuk memvisualkan data dengan lebih indah dan rapi dengan menampilkan data secara 2D. Matplotlib mencoba membuat hal-hal mudah menjadi mudah dan hal-hal sulit menjadi mungkin. Dengan Matplotlib dapat membuat plot, histograms, power spectra, bar charts, errorcharts, scatterplots, dll.
+    
+    \item Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib.
+    \begin{itemize}
+        \item pertama import library matplotlib.
+        \item kedua membuat isi dari variabel sumbu x dan y.
+        \item ketiga tampilkan hasil dari sumbu x dan y.
+    \end{itemize}
+    \lstinputlisting[firstline=8, lastline=13]{src/6/1174077/teori/1174077.py}
+    
+    \item Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis (bar, histogram, scatter, line, dll) jenis plot di matplotlib.
+    \par Untuk perbedaan fungsi plot yang digunakan adalah bentuk-bentuk grafik yang akan di tampilkan sesuai dengan perintah yang digunakan pada pemogramannya.
+    Dan untuk cara pengguna plot tersebut sebagai berikut:
+    \begin{itemize}
+        \item bar
+        
+        Dalam Penggunaan plot bar koordinat x nya itu yang awal, dan untuk Y nya adalah yang kedua.
+        \lstinputlisting[firstline=15, lastline=25]{src/6/1174077/teori/1174077.py}
+        \item histogram
+        
+        Dalam penggunaan plot histogram titik x nya bisa tidak sama dengan titik Y.
+        \lstinputlisting[firstline=28, lastline=36]{src/6/1174077/teori/1174077.py}
+        \item scatter
+        
+        Untuk penggunaa plot scatter atau bisa juga d bilang diagram titik.
+        \lstinputlisting[firstline=39, lastline=53]{src/6/1174077/teori/1174077.py}
+        \item line
+        
+        Perintah yang digunakan untuk membuat grafik line sebagai berikut.
+        \lstinputlisting[firstline=56, lastline=59]{src/6/1174077/teori/1174077.py}
+    \end{itemize}
+    
+    \item Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut.
+    \begin{itemize}
+        \item Untuk membuat legenda pada plot dapat menggunakan syntax fungsi legend pada MATLAB.
+        \lstinputlisting[firstline=21, lastline=21]{src/6/1174077/teori/1174077.py}
+        \item Untuk menambah label pada garis sumbu pada grafik dapat menggunakan syntax fungsi xlabel dan fungsi ylabel pada MATLAB.
+        \lstinputlisting[firstline=22, lastline=23]{src/6/1174077/teori/1174077.py}
+        \par Kaitannya untuk memperjelas informasi dari grafik yang dibuat.
+    \end{itemize}
+    
+    \item Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya.
+    \par fungsi dari subplot dari matplotlib untuk bisa membuat lebih dari 1 grafik dalam sebuah program.
+    \par untuk cara kerjanya sendiri bisa di cek sebagai berikut:
+    \lstinputlisting[firstline=62, lastline=84]{src/6/1174077/teori/1174077.py}
+    \par Cara penggunaannya sebagai contoh saya ambil plt.subplot(221), pada angka 2 yang pertama adalah pembagian keatas kalo kita mau bagi 3 keatas kita isi angka pertama dengan 3, angka 2 yang kedua adalah pembagian kesamping penggunaannya sama kaya angka pertama kalo kita mau ngebagi kesamping 4 kita isi angka kedua 4, dan angka 1 pada angka ketiga itu tempat disimpannya grafik yang akan dimunculkan
+    
+    \item Sebutkan semua parameter color yang bisa digunakan (contoh:  m,c,r,k,...  dkk)
+    Parameter warna yang bisa digunakan dibagi menjadi 2 tipe:
+    \begin{itemize}
+	    \item RGB
+	
+	Untuk keterangannya sebagai berikut
+    R untuk warna Red atau Merah
+    G untuk warna Green atau Hijau
+    B untuk warna Blue atau Biru
+    
+        \item CMYK
+    
+    Untuk keterangannya sebagai berikut
+    C untuk warna Cyan atau Biru Muda
+    M untuk warna Mangenta atau Merah Tua
+    Y untuk warna Yellow Atau Kuning
+    K untuk warna Black atau Hitam
+    \end{itemize}
+    
+    \item Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri.
+    \par Untuk histogram kita tidak boleh memiliki isi variable x dan y yang sama. Misal x-nya ada 10 nilai sedangkan Y-nya ada 5 nilai, data tersebut tidak menjadi masalah karena pada histogram data yang dimunculkan adalah data rentang dari data variable y. Dan ini adalah contoh dari penggunaan histogram.
+    \lstinputlisting[firstline=87, lastline=93]{src/6/1174077/teori/1174077.py}
+    
+    \item Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels,colors, startangle, shadow, explode, autopct.
+    \begin{itemize}
+        \item Label
+    
+    Label digunakan untuk mempermudah pembaca yaitu memberikan nama pada variable di grafik.
+    
+        \item Color
+    
+    Warna yang dimunculkan pada setiap data.
+    
+        \item Startangle
+    
+    Startangle digunakan untuk sudut awal pada diagram pie tersebut.
+    
+        \item Shadow
+    
+    Shadow(Bayangan) digunakan untuk membuat bayangan pada setiap diagram pie yang menonjol.
+    
+        \item Explode
+
+    Explode digunakan untuk mengeluarkan suatu data agar data tersebut menjadi terlihat lebih menonjol.
+    
+        \item Autopct
+    
+    Autopct digunakan menyesuaikan berapa angka yang ada dibelakang koma.
+\end{itemize}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
