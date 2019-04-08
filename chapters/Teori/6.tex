@@ -26,7 +26,7 @@ Dan untuk cara pengguna plot tersebut sebagai berikut
     \item histogram
     Dalam penggunaan plot histogram titik x nya bisa tidak sama dengan titik Y.
     untuk penggunaannya bisa sebagai berikut.
-    \lstinputlisting[firstline=27, lastline=34]{src/6/117473/teori/1174073.py}
+    \lstinputlisting[firstline=27, lastline=34]{src/6/1174073/teori/1174073.py}
     \item scatter
     Untuk penggunaa plot scatter atau bisa juga d bilang diagram titik.
     Contoh dari penggunaannya bisa dilihat sebagai berikut.
@@ -185,4 +185,81 @@ explode : explode digunakan untuk mengeluarkan suatu data agar data tersebut ter
 
 autopct : Digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan.\\
 \end{enumerate}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Kaka Kamaludin}
+\subsection{Soal 1}
+Matplotlib merupakan library python yang berfungsi untuk mengasilkan plot yang di paparkan dengan toolkit GUI yang interaktif.
+
+\subsection{Soal 2}
+penulisan Sumbu x dan Y, pada plt.plot(xxx, yyy) diwali dengan sumbu x lalu y.
+\lstinputlisting[firstline=1, lastline=13]{src/6/1174067/Teori/1174067_teori.py}
+
+
+\subsection{Soal 3}
+\begin{itemize}
+	\item Line Plot, berfungsi untuk menamplikan data yang berkelanjutan dalam priode tertentu.
+	\lstinputlisting[firstline=15, lastline=18]{src/6/1174067/Teori/1174067_teori.py}
+	
+	\item Pie Chart, berfungsi untuk menamplikan bagian suatu data terhadap jumlah keseluruhan secara proporsional. 	setiap bagian data dihitung dalam persentase. pie chart berbentuk bulat seperti potongan kue.
+	\lstinputlisting[firstline=20, lastline=42]{src/6/1174067/Teori/1174067_teori.py}
+	
+	\item Bar Chart, berfungsi sebagai perbandingan beberapa kategori data, ditampilkan dalam bentuk batang.
+	\lstinputlisting[firstline=43, lastline=53]{src/6/1174067/Teori/1174067_teori.py}
+	
+	\item Scatter Chart, biasa digunakan untuk pengujian pola hubungan antara dua variable.
+	\lstinputlisting[firstline=54, lastline=69]{src/6/1174067/Teori/1174067_teori.py}
+	
+	\item Histogram Chart, berfungsi untuk perbandingan data dalam bentuk range.
+	\lstinputlisting[firstline=70, lastline=79]{src/6/1174067/Teori/1174067_teori.py}
+	
+	\item Stack Chart,.
+	\lstinputlisting[firstline=80, lastline=101]{src/6/1174067/Teori/1174067_teori.py}		
+\end{itemize}
+
+\subsection{Soal 4}
+Legend dan Label berfungsi untuk mempermudah dalam pembacaan chart tersebut. contohnya:
+\lstinputlisting[firstline=102, lastline=119]{src/6/1174067/Teori/1174067_teori.py}
+
+\subsection{Soal 5}
+sublpot berfungsi untuk membuat plot lebih dari 1, contoh:
+\lstinputlisting[firstline=120, lastline=148]{src/6/1174067/Teori/1174067_teori.py}
+
+\subsection{Soal 6}
+parameter color bisa dibuat dengan menggunakan float value(0.1, 0.2, 0.5, 0.3), hex ('\# 0F0F0F' atau '\#0F0F0F0F'), xkcd color ('xkcd:sky blue'), Tableau Colors ('tab:gray')
+\begin{itemize}
+    \item Tipe Warna RGB
+
+    R untuk warna Red atau Merah,
+    G untuk warna Green atau Hijau,
+    B untuk warna Blue atau Biru,
+    \item Tipe warna CMYK
+
+    C untuk warna Cyan atau Biru Muda,
+    M untuk warna Mangenta atau Merah Tua,
+    Y untuk warna Yellow Atau Kuning,
+    K untuk warna black atau Hitam
+\end{itemize}
+\lstinputlisting[firstline=149, lastline=169]{src/6/1174067/Teori/1174067_teori.py}
+
+\subsection{Soal 7}
+Untuk fungsi histogram ini kedua titik koordinat boleh tidak sama. Misalnya x nya ada 10 nilai sedangkan Y nya ada 5 nilai, itu tidak akan jadi masalah karena diagram ini digunakan untuk mendata usia dari rentang tertentu atau kebutuhan lainnya.
+	\lstinputlisting[firstline=170, lastline=177]{src/6/1174067/Teori/1174067_teori.py}
+
+\subsection{Soal 8}
+\begin{itemize}
+    \item label
+    Label digunakan untuk mempermudah pembaca dalam membaca diagram pie
+    \item color
+    warna digunakan untuk membedakan antar data
+    \item startangle
+    Digunakan untuk sudut yang digunakan untuk memulai diagram pie tersebut
+    \item shadow
+    bayangan digunakan untuk membuat bayangan dari setiap diagram pie yang menonjol
+    \item explode
+    explode digunakan untuk mengeluarkan suatu data agar data tersebut terlihat menonjol
+    \item autopct
+    Digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
